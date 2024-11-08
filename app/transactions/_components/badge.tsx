@@ -6,7 +6,7 @@ export interface TransactionTypeBadgeProps {
   transaction: Transaction;
 }
 const TransactionTypeBadge = ({ transaction }: TransactionTypeBadgeProps) => {
-  if (transaction.type === TransactionType.DESPOSIT) {
+  if (transaction.type === TransactionType.DEPOSIT) {
     return (
       <Badge className="bg-primary/10 font-bold hover:bg-primary/20">
         <CircleIcon className="mr-2 fill-primary text-primary" size={10} />
