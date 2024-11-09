@@ -5,7 +5,6 @@ import AddTransactionButton from "../_components/add-transaction-button";
 
 const Transactions = async () => {
   const transactions = await db.transaction.findMany({});
-  console.log(transactions);
   return (
     <div className="space-y-6 p-6">
       <div className="flex w-full items-center justify-between">
